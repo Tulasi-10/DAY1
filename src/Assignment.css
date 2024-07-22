@@ -1,0 +1,43 @@
+.assignment-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 40px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 150%;
+    max-width: 600px;
+}
+
+.list-item {
+    display: flex;
+    align-items: left;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 200%;
+    margin-right: 200px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.item-feedback {
+    color: #555;
+}
