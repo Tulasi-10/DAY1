@@ -1,43 +1,71 @@
-.assignment-container {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    padding: 40px;
+/* #check{
+    color: blueviolet;
+} */
+
+.review-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;;
+    justify-items: center;
+    align-items: center;
+    padding: 16px;
+    border: #3b3b6b;
 }
 
-.list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 150%;
-    max-width: 600px;
-}
-
-.list-item {
-    display: flex;
-    align-items: left;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-}
-
-.item-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 200%;
-    margin-right: 200px;
-}
-
-.item-details {
+.stu-section{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 275px; 
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    /* shadow included... for each container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.item-name {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 8px;
+.stu-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+
+.stu-details {
+    margin-left: 0px;
+}
+  
+.stu-details h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+  
+.stu-details p {
+    margin: 8px 0 0;
 }
 
-.item-feedback {
-    color: #555;
+/* to get a line between them, generally acta as a seperator */
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 16px 0;
+  }
+
+.connect-button {
+    padding: 8px 16px;
+    border: none;
+    font: bolder;
+    background-color: #4c4c82;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+.connect-button:hover {
+    background-color: #3b3b6b;
+}
+  

@@ -3,31 +3,34 @@ import React from "react";
 import './Assignment.css';
 
 function Assignment() {
-    const data = [
-        { imgSrc: "images.jpg", name: "Sowji", feedback: "Product is bad" },
-        { imgSrc: "images3.png", name: "Keerthi", feedback: "GOOD" },
-        { imgSrc: "images4.png", name: "Suji", feedback: "excellent" },
-        { imgSrc: "images5.png",  name: "Navya", feedback:"Good"},
-        {imgSrc:  "images6.png",  name:"PRIYA", feedback:"average"},
-        { imgSrc: "images4.png", name: "Sowmya", feedback: "excellent" },
-    ];
 
-
-    return (
-        <div className="assignment-container">
-            <ul className="list">
-                {data.map((item, index) => (
-                    <li key={index} className="list-item">
-                        <img src={item.imgSrc} alt={item.name} className="item-image"/>
-                        <div className="item-details">
-                            <span className="item-name">{item.name}</span>
-                            <span className="item-feedback">{item.feedback}</span>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-}
-
-export default Assignment;
+    
+    const studentDetails = [{stuImg : "images.jpg", name : "Sruthi", education : "US support & Affiliate"},
+                             {stuImg : "images3.png", name : "Swathi", education : "OnBoarding Manager/Producer"},
+                             {stuImg : "images4.png", name : "Micheal", education : "Growth Marketing"},
+                             {stuImg : "images5.png", name : "Jhanu", education : "Software QA Tester / Customer Support"},
+                             {stuImg : "images6.png", name : "priya", education : "Inbound and Marketing"},
+                             {stuImg : "images.png", name : "Sruthi", education : "Customer Support at Agorapulse"},
+                             {stuImg : "images 8.png", name : "Jasmitha", education : "Harness your social media"},
+                             {stuImg : "images9.png", name : "Rithu", education : "CMO |Operations Manager"}
+                            ];
+    
+   
+        
+        return (
+            <div className="review-container">
+                    {studentDetails.map((student, index) => 
+                        (<div key={index} className="stu-section">
+                            <img src={student.stuImg} width="200" height="150"/>
+                            <div className="stu-details">
+                                <h1>{student.name}</h1>
+                                <p>{student.education}</p>
+                            </div>
+                            <hr />
+                            <button className="connect-button">Connect</button>
+                        </div>))}
+            </div>
+        )
+    }
+    
+    export default Assignment;
