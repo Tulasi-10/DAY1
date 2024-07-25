@@ -17,11 +17,14 @@
 // reportWebVitals();
 import React from "react";
 import ReactDOM  from "react-dom/client";
+import './index.css'; 
 // import Assignment from "./Assignment";
 //  import Two from "./Two";
 // import Fifth from "./Fourth"
 //import Fifth from "./Fifth";
- import Review from "./Review";
-const rootElement = document.getElementById('root')
+//  import Sixth from "./Sixth";
+import Product from "./Product";
+// import Tabfunc from "./Tabfunc";
+const rootElement = document.getElementById('root');
 const rootRef=ReactDOM.createRoot(rootElement);
-rootRef.render(<Review/>)
+rootRef.render(<Product/>);

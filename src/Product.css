@@ -1,0 +1,126 @@
+/* Container for the product list */
+.product-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container for the cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual card styling */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 320px; /* Increased max-width for the card */
+  width: 100%;
+  transition: transform 0.3s;
+  padding: 10px; /* Added padding to the card */
+  box-sizing: border-box; /* Ensure padding is included in the card width */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  max-width: 100%;
+  height: 220px; /* Increased height to fit the image */
+  object-fit: contain; /* Ensure the entire image fits within the container */
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding is included in the image height */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Add margin for spacing */
+  margin-left: 50px;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #555;
+  margin: 0 0 0 10px; /* Margin to the left for spacing */
+}
+
+.star-rating {
+  color: #f3c009;
+  font-size: 1.5em;
+}
+
+.star {
+  margin-right: 2px;
+}
+
+.card-price {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Button styling */
+.addtocartBtn,
+.btnn {
+  background-color: hsl(59, 87%, 50%);
+  color: rgb(14, 13, 13);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 1em;
+}
+
+.addtocartBtn:hover,
+.btnn:hover {
+  background-color: #3ce14f;
+}
+
+.divvtag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnt {
+  margin: 10px 10px;
+  font-size: 1.2em;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
